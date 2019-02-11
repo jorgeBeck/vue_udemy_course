@@ -1,0 +1,27 @@
+/** Inicia Area de tema "negro" */
+body {
+    background-color: #353b44;
+    color: white;
+}
+
+hr {
+    border-color: red;
+}
+
+.jumbotron {
+    background-color: #3d4553;
+}
+
+.list-group-item {
+    background-color: #4e6181;
+}
+/** Fin Area de tema "negro" */
+
+.pull-right-ese {
+    float: right;
+}
+
+.terminada {
+    color: #b9b9b9;
+    text-decoration: line-through;
+}

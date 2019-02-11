@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vue curso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <script src="https://unpkg.com/vue"></script>
+
+</head>
+
+    <!-- v-on: es igual a @ -->
+
+<body>
+    <div id="vm">
+        <div>
+            <button @mouseEnter="sumarUno">Sumar uno</button>
+            <button @click="restarUno">Restar uno</button>
+            <hr>
+            {{ contador }}
+            <br><hr>
+            <button @click="alerta('Alerta')">Alerta</button>
+            <br>
+            <hr>
+            <div style="height:300px;border: 1px solid gray" 
+                @mousemove="ubicacion" 
+                @click.once="sumar">
+                <div style="margin: 20px;height:30px;border: 1px solid blue"
+                    @mousemove.stop>
+                </div>
+            </div>
+            x: {{ x }}, y: {{ y }}, contador: {{ contador }}
+            <input type="text" @keyup.delete="sumar">
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

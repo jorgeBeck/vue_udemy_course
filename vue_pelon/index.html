@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Vue curso</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+        <script src="https://unpkg.com/vue"></script>
+        
+    </head>
+    <body>
+        <div id="vm">
+            <span>{{ mensaje }}</span>
+            <!-- <img :src="src" alt=""> -->
+            <button v-on:click="primero++">Incrementar el primero</button>
+            <button v-on:click="segundo++">Incrementar el segundo</button>
+            <button v-on:click="tercero++">Incrementar el tercero</button>
+            <button v-on:click="cuarto++">Incrementar el cuarto</button>
+            <!-- <button v-on:click="mensaje = 'Quesfdfsdiufshdi'">Actualizar</button>
+            <button v-on:click="destruir">Destruir</button> -->
+            <p>Primero: {{ primero }}</p>
+            <p>Segundo: {{ segundo }}</p>
+            <p>Tercero: {{ tercero }}</p>
+            <p>Cuarto: {{ cuarto }}</p>
+            <p>Suma: {{ suma }}</p>
+            <br>
+            <input type="text" v-model="mensaje">
+        </div>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
